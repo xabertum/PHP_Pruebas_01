@@ -42,18 +42,26 @@ precio_con_iva($precio);
 print "El precio con iva es ".$precio;
 
 echo "<br>";
+echo "<br>";
 
 $modulos = array("PR" => "programación", "BD" => "Base de datos");
+$modulos ["RC"] = "Radio Control";
 
 
 foreach ($modulos as $i => $i_value) {
       
     echo "Posición: ".$i . ", valor: ".$i_value;
     echo "<br>";
-    
-    
+   
 }
 
+$modulos_value [] = "Esto es una prueba";
+
+while ($modulos = each($modulos_value)) {
+    
+    print "El codigo del modulo ".$modulos[1]. " es ".$modulos_value."<br/>";
+        
+}
 
 
 
