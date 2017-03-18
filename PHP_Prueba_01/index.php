@@ -40,6 +40,13 @@ and open the template in the editor.
         echo "<h2>$txt1</h2>";
         echo "Study PHP at $txt2<br>";
         echo $x + $y;
+        
+        echo "<h2>"; 
+        
+        echo str_word_count('Hola esto es un prueba');
+        
+        echo "</h2>";
+        
         ?>
 
     </body>
