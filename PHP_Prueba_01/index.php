@@ -28,16 +28,16 @@ and open the template in the editor.
         include 'SrciptPHP_01.php';
         ?>
 
-        <form action="">
+        <form method = "post" action="index.php">
             First Name: <br/>
-            <input type="" name="firstname">
+            <input type="" name="firstname"><br/>
             Last Name: <br/>    
             <input type="" name="lastname">
             <br><br>
-            <input type="submit" value="">
+            <input type="submit" value="Submit">
         </form>
-            
-            
-        </form>
-    </body>
+
+
+    </form>
+</body>
 </html>

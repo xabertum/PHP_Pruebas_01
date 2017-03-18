@@ -29,17 +29,14 @@ echo str_word_count('Hola esto es un prueba maliciosa');
 
 echo "</h2>";
 
-
-
 function precio_con_iva(&$precio, $iva = 0.18) {
-    
+
     $precio *= (1 + $iva);
-    
 }
 
 $precio = 10;
 precio_con_iva($precio);
-print "El precio con iva es ".$precio;
+print "El precio con iva es " . $precio;
 
 echo "<br>";
 echo "<br>";
@@ -49,20 +46,29 @@ $modulos ["RC"] = "Radio Control";
 
 
 foreach ($modulos as $i => $i_value) {
-      
-    echo "Posición: ".$i . ", valor: ".$i_value;
+
+    echo "Posición: " . $i . ", valor: " . $i_value;
     echo "<br>";
-   
 }
 
 $modulos_value [] = str_word_count("Esto es una prueba");
 
 while ($modulos = each($modulos_value)) {
-    
-    print $modulos[1]. " es ".$modulos_value[0]."<br/>";
-        
+
+    print $modulos[1] . " es " . $modulos_value[0] . "<br/>";
 }
 
+echo "<br>";
+echo "<br>";
 
+if ($_SERVER["REQUEST_METHOD"] == "POST") {
+    $firstName = $_POST['firstname'];
+    $lastName = $_POST['lastname'];
 
+    print "el noombre recogido es: " . $firstName;
+    echo "<br>";
+    print "el apellido recogido es: " . $lastName;
+}
+echo "<br>";
+echo "<br>";
 ?>
