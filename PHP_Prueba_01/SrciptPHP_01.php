@@ -41,5 +41,20 @@ $precio = 10;
 precio_con_iva($precio);
 print "El precio con iva es ".$precio;
 
+echo "<br>";
+
+$modulos = array("PR" => "programación", "BD" => "Base de datos");
+
+
+foreach ($modulos as $i => $i_value) {
+      
+    echo "Posición: ".$i . ", valor: ".$i_value;
+    echo "<br>";
+    
+    
+}
+
+
+
 
 ?>
