@@ -55,11 +55,11 @@ foreach ($modulos as $i => $i_value) {
    
 }
 
-$modulos_value [] = "Esto es una prueba";
+$modulos_value [] = str_word_count("Esto es una prueba");
 
 while ($modulos = each($modulos_value)) {
     
-    print "El codigo del modulo ".$modulos[1]. " es ".$modulos_value."<br/>";
+    print $modulos[1]. " es ".$modulos_value[0]."<br/>";
         
 }
 

@@ -26,8 +26,18 @@ and open the template in the editor.
 
         <?php
         include 'SrciptPHP_01.php';
-        
         ?>
 
+        <form action="">
+            First Name: <br/>
+            <input type="" name="firstname">
+            Last Name: <br/>    
+            <input type="" name="lastname">
+            <br><br>
+            <input type="submit" value="">
+        </form>
+            
+            
+        </form>
     </body>
 </html>
